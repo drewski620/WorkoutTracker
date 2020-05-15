@@ -75,6 +75,6 @@ app.delete("/api/workouts", (req, res) => {
 })
 
 
-app.listen(port, () => {
-    console.log('Express server is listening on port ', port, ' .')
+app.listen(PORT, () => {
+    console.log('Express server is listening on port ', PORT, ' .')
 })
