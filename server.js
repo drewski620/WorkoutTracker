@@ -49,7 +49,7 @@ app.put('/api/workouts/:id', function(req, res){
         .catch(err => {console.log(err); res.status(500).json(err)} )
 });
 
-app.get("/exercises", (req, res) => {
+app.get("/exercise", (req, res) => {
     res.sendFile(__dirname + "/public/exercise.html");
 });
 
