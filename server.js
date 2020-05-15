@@ -16,6 +16,7 @@ app.use(express.static('public'));
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/Workout', {
     useNewUrlParser: true,
     useFindAndModify: false,
+    useUnifiedTopology: true
 });
 
 app.get('/api/workouts', function(req, res) {
