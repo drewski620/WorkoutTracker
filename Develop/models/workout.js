@@ -3,7 +3,9 @@ const mongoose = require("mongoose");
 const workoutSchema = new mongoose.Schema({
     day: {
         type: Date,
-        required: true
+        default: function () {
+            return new Date();
+        }
     },
     exerises: [
         {
